@@ -1,0 +1,27 @@
+.coles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 10px;
+    background-color: #279609;
+    padding: 20px 20px;
+    width: 428px;
+    height: 0px;
+    margin-top: 40px;
+    margin-left: 350px;
+    text-align: center;
+    letter-spacing: 0.45px;
+    font: 798 25px Inter, sans-serif;
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .coles {
+      width: 300px; /* La largeur sera automatiquement ajustée en fonction du contenu */
+      margin: 40px auto; /* Centrer horizontalement et ajouter un espacement sur les côtés */
+      margin-left: 35px;
+      font-size: 18px; /* Réduire la taille de la police pour les petits écrans */
+     }
+  }
+  

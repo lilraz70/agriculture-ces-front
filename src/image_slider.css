@@ -1,0 +1,15 @@
+
+  
+  .App {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 11px 43px;
+    margin: 30px auto 0; /* Centrage vertical et descente */
+  }
+  
+  

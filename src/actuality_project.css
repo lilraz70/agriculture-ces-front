@@ -1,0 +1,126 @@
+/* CSS pour redimensionner l'image en fonction de la taille de l'écran */
+.containers {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  max-width: 100%; /* Image redimensionnée pour s'adapter à la largeur de son conteneur */
+  max-height: 200px; /* Hauteur maximale de l'image */
+  height: auto; /* Hauteur ajustée automatiquement en fonction de la largeur */
+}
+
+
+/* Mettre l'image et le texte en position row */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mettre texte, details et date en column */
+.title,
+.details,
+.date {
+  display: block; /* Assure que chaque élément est affiché sur une ligne distincte */
+}
+.details{
+  width: 150px;
+  overflow: hidden; /* Cacher le texte dépassant de la boîte */
+  text-overflow: ellipsis; /* Afficher des points de suspension (...) pour indiquer que le texte est tronqué */
+  height: 45px;
+}
+.title{
+  width: 200px;
+}
+  
+.cols {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 10px;
+  background-color: #279609;
+  padding: 10px 20px;
+  margin-left: 25px;
+  width: 428px;
+  height: auto;
+  text-align: center;
+  letter-spacing: 0.45px;
+  font: 798 25px Inter, sans-serif;
+  color: white;
+}
+
+.cards-button {
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  background-color: #279609;
+  align-self: center;
+  margin-top: 10px;
+  margin-left: 210px;
+  color: #f5f5f5;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 9px 14px;
+  font: 14px Inter, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Pour séparer Actuality et Projet */
+  align-items: center; /* Pour aligner verticalement les éléments */
+}
+
+.projet{
+  margin-right: 25px;
+}
+
+/* Styles responsives */
+@media only screen and (max-width: 768px) {
+  /* Pour les écrans plus petits que 768px */
+  .containers {
+    flex-direction: column; /* Mettre les images et le texte en colonne */
+  }
+  .col-s {
+    margin-bottom: 10px;
+    max-height: none;
+    flex-direction: column;
+    align-items: center;
+    
+  } 
+  .row{
+    align-items: center;
+    width: 360px;
+    margin-left: 0px;
+  }
+  .content{
+    align-items: center;
+  }
+  
+}
+
+
+@media only screen and (max-width: 480px) {
+  /* Pour les écrans plus petits que 480px */
+  .cols {
+    font-size: 20px; /* Réduire la taille de la police */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Pour les écrans plus petits que 768px */
+  .rows {
+    flex-direction: column; /* Pour empiler les éléments en colonne */
+    align-items: center;
+  }
+  .contain-wrapper{
+    align-items: center;
+  }
+  /* Pour les écrans plus petits que 768px */
+  .cards-button {
+    margin-left: 150px; /* Centrer le bouton */ 
+    margin-bottom: 15px;
+  }
+}

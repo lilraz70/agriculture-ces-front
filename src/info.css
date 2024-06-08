@@ -1,0 +1,62 @@
+.containers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+ 
+  
+  .col-s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 10px;
+  background-color: #279609;
+  padding: 10px 20px;
+  margin-left: 25px;
+  width: 428px;
+  height: auto;
+  text-align: center;
+  letter-spacing: 0.45px;
+  font: 798 25px Inter, sans-serif;
+  color: white;
+  }
+  
+  .card-s-button {
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    background-color: #279609;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 210px;
+    color: #f5f5f5;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 9px 14px;
+    font: 14px Inter, sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Media Query pour les écrans plus petits */
+  @media screen and (max-width: 768px) {
+    .col-s {
+      margin-right: auto;
+      margin-bottom: 10px;
+      max-height: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+    } 
+  }
+
+  @media only screen and (max-width: 768px) {
+   
+    /* Pour les écrans plus petits que 768px */
+    .card-s-button {
+      margin-left: 150px; /* Centrer le bouton */ 
+    }
+  }
+  

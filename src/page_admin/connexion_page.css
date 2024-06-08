@@ -1,0 +1,95 @@
+.containerses {
+  max-width: 90%; /* Utilisation d'un pourcentage pour rendre la largeur flexible */
+  margin: 0 auto; /* Centrer le conteneur */
+  padding: 0 20px;
+  text-align: center;
+}
+
+.tile {
+  font: 700 4vw/83% Inter, sans-serif; /* Utilisation de vw pour une taille de police adaptable */
+  letter-spacing: 2.4px;
+}
+
+.subtile {
+  font-weight: 500;
+  margin-top: 2vw; /* Utilisation de vw pour un espacement adaptable */
+}
+
+.login-form {
+  border-radius: 2vw; /* Utilisation de vw pour une bordure adaptable */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #d9d9d9;
+  color: #fff;
+  font-weight: 200;
+  padding: 2vw 4vw; /* Utilisation de vw pour un padding adaptable */
+  margin-top: 2vw; /* Utilisation de vw pour un espacement adaptable */
+  width: 300px;
+  margin-left: 355px;
+  margin-bottom: 30px;
+}
+
+
+
+.input-field {
+  margin-top: 20px;
+  font-family: Inter, sans-serif;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  background-color: #279609;
+  padding: 11px 29px;
+  height: 25px;
+}
+
+.password-field {
+  font-family: Inter, sans-serif;
+  border-radius: 5px;
+  background-color: #279609;
+  padding: 11px 51px;
+  margin-top: 20px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.input-field::placeholder {
+  color: #fff; /* Couleur de votre choix */
+}
+
+.password-field::placeholder {
+  color: #fff; /* Couleur de votre choix */
+}
+
+.submits-buttons {
+  border-radius: 4vw; /* Utilisation de vw pour une bordure adaptable */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #a8ed96;
+  color: #000;
+  font-weight: 700;
+  padding: 2vw 8vw; /* Utilisation de vw pour un padding adaptable */
+  margin-top: 6vw; /* Utilisation de vw pour un espacement adaptable */
+}
+
+/* Media queries pour des ajustements spécifiques à différentes tailles d'écran */
+@media only screen and (max-width: 768px) {
+  .tile {
+    font-size: 4vw; /* Taille de police adaptable pour les écrans plus petits */
+  }
+
+  .subtile {
+    margin-top: 3vw; /* Espacement adaptable pour les écrans plus petits */
+  }
+
+  .login-form{
+    margin-left: 20px;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  .tile {
+    font-size: 6vw; /* Taille de police adaptable pour les écrans encore plus petits */
+  }
+
+  .subtile {
+    margin-top: 4vw; /* Espacement adaptable pour les écrans encore plus petits */
+  }
+  
+}

@@ -1,0 +1,92 @@
+.contain-wrapper {
+  display: flex;
+  justify-content: space-between; /* Espace disponible entre les éléments */
+  flex-wrap: wrap; /* Permet le retour à la ligne des éléments si l'espace est insuffisant */
+}
+
+.contain,
+.contains {
+  background-color: #d9d9d9;
+  width: 468px; /* Largeur de 50% moins la marge */
+  height: auto; /* Hauteur automatique */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permet le retour à la ligne des éléments à l'intérieur du conteneur */
+}
+
+.image {
+  width: 190px; /* Largeur de l'image */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  margin: 0 20px; /* Marge à gauche et à droite de l'image */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex-grow: 1; /* Permet au contenu de prendre autant d'espace que possible */
+}
+
+.title {
+  font-size: 24px;
+  margin: 20px 0 5px 0; /* Marge en haut du titre */
+}
+
+.details {
+  font-size: 16px;
+  margin: 5px 0; /* Marge entre les détails */
+}
+
+.date {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+}
+
+.card-button {
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  background-color: #279609;
+  align-self: center;
+  margin-top: 48px;
+  color: #f5f5f5;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 9px 14px;
+  font: 14px Inter, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media Query pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+  .contain,
+  .contains {
+    padding: 20px;
+    width: 300px; /* Largeur de 100% moins la marge */
+    margin: 0px 0; /* Marge en haut et en bas du conteneur */
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    align-items: center;
+   }
+
+   .contain-wrapper{
+    align-items: center;
+   }
+  .image {
+    width: 80%; /* Largeur maximale pour s'adapter à la taille du conteneur */
+    margin: 0; /* Aucune marge pour s'adapter à la largeur maximale */
+    margin-left: 20px;
+  }
+}

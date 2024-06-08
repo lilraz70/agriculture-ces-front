@@ -1,0 +1,174 @@
+/* styles.css */
+
+.wrapper {
+  background-color: #279609;
+  max-width: 100%;
+  padding: 23px;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 100%;
+}
+
+.column:nth-child(2n+1) {
+  margin-left: 0;
+}
+
+
+.logo-container {
+  display: flex;
+  height: 60px;
+}
+
+.logo-text {
+  background-color: #d9d9d9;
+  align-items: start;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 26px 15px;
+  font: 400 12px Inter, sans-serif;
+}
+
+.organization-name {
+  text-align: center;
+  letter-spacing: 0.55px;
+  margin: auto 0;
+  font: 700 11px Inter, sans-serif;
+  font-weight: 800;
+  width: 200px;
+}
+
+.contact-info {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.contacts{
+  margin-top: 10px;
+  margin-left: 75px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+}
+
+.email-info {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  width: 200px;
+  margin-top: 18px;
+  margin-left: 0px;
+}
+
+.nav-link {
+  font-family: Inter, sans-serif;
+  width: 200px;
+  margin-left: 105px;
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: -80px;
+}
+
+.chat-title {
+  margin-top: -5px;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+  line-height: 143%;
+  letter-spacing: 0.7px;
+  align-self: center;
+  margin-left: -10px;
+}
+
+
+
+
+.form-input {
+  margin-top: 10px;
+  align-items: center;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 0.65px;
+  justify-content: center;
+  padding: 9px 11px;
+  font: 13px Inter, sans-serif;
+}
+
+.form-input textarea {
+  padding: 15px 11px 57px;
+  margin-top: -10px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.form-input input{
+height: 30px;
+width: 215px;
+border-radius: 10px;
+}
+
+.card-buttons {
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  background-color:#d9d9d9;
+  align-self: center;
+  margin-top: 5px;
+  color: black;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 9px 10px;
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  width: 215px;
+}
+
+
+@media (max-width: 991px) {
+  .column {
+    flex: 1 1 100%; /* Une colonne à 100% sur les petits écrans */
+    margin-top: 4%;
+  }
+  .wrapper{
+    width: 100%;
+  }
+  /* Afficher les colonnes en colonne sur les petits écrans */
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+  }
+  header{
+    flex-wrap: wrap;
+  }
+  form{
+    margin-left: -20px;
+  }
+
+  .form-input textarea,
+  .form-input input,
+  .card-buttons{
+    width: 250px;
+  }
+}
+
+
